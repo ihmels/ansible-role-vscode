@@ -3,9 +3,9 @@ language: python
 services: docker
 
 env:
+  - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-ubuntu2004-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-ubuntu1804-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-ubuntu1604-ansible:latest'
-  - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-ubuntu1404-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-debian10-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-debian9-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-fedora32-ansible:latest'
