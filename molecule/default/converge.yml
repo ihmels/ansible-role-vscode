@@ -10,10 +10,11 @@
       become: yes
       when: ansible_os_family == 'Debian'
 
-    - name: Install GPG.
+    - name: Install GnuPG.
       apt:
-        name: [gpg, gpg-agent]
+        name: [gnupg, gnupg-agent]
         state: present
+      become: yes
       when: ansible_os_family == 'Debian'
 
   roles:
