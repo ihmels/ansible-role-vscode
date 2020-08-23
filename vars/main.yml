@@ -1,0 +1,2 @@
+---
+vscode_package: "{{ (vscode_build == 'insiders') | ternary('code-insiders', 'code') }}"
