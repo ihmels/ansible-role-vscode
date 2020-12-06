@@ -8,6 +8,7 @@ env:
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-ubuntu1604-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-debian10-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-debian9-ansible:latest'
+  - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-fedora33-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-fedora32-ansible:latest'
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-fedora31-ansible:latest'
 
