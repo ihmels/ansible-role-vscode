@@ -12,7 +12,7 @@ env:
   - MOLECULE_IMAGE: 'docker.io/geerlingguy/docker-fedora31-ansible:latest'
 
 install:
-  - pip install molecule docker yamllint ansible-lint
+  - pip install molecule[docker] docker yamllint ansible-lint
 
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
