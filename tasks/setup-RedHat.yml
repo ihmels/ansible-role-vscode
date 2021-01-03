@@ -8,7 +8,7 @@
 
 - name: Add VS Code repository.
   yum_repository:
-    name: vscode
+    name: code
     description: Visual Studio Code
     baseurl: https://packages.microsoft.com/yumrepos/vscode
     gpgcheck: yes
