@@ -28,12 +28,12 @@ jobs:
           python-version: '3.x'
 
       - name: Install test dependencies.
-        run: pip3 install ansible "ansible-lint<5" yamllint
+        run: pip3 install ansible ansible-lint[community,yamllint]
 
       - name: Lint code.
         run: |
           yamllint .
-          ansible-lint
+          ansible-lint .
 
   molecule:
     name: Molecule
