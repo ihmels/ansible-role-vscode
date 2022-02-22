@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: vscode
+  namespace: ihmels
   author: Yannick Ihmels <yannick@ihmels.org>
   description: Install Microsoft Visual Studio Code
   license: MIT
