@@ -8,12 +8,14 @@ galaxy_info:
   platforms:
     - name: Fedora
       versions:
-        - '32'
-        - '33'
+        - '36'
+        - '37'
     - name: Ubuntu
       versions:
         - bionic
         - focal
+        - jammy
+        - kinetic
     - name: Debian
       versions:
         - buster
