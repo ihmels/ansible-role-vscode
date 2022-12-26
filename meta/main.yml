@@ -4,13 +4,12 @@ galaxy_info:
   author: Yannick Ihmels <yannick@ihmels.org>
   description: Install Microsoft Visual Studio Code
   license: MIT
-  min_ansible_version: 2.9
+  min_ansible_version: '2.9'
   platforms:
     - name: Fedora
       versions:
-        - 33
-        - 34
-        - 35
+        - '32'
+        - '33'
     - name: Ubuntu
       versions:
         - bionic
