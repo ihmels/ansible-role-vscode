@@ -1,32 +1,32 @@
 ---
-- name: Update apt cache.
+- name: Update apt cache
   ansible.builtin.apt:
     update_cache: true
     cache_valid_time: 3600
 
-- name: Install dependencies.
+- name: Install dependencies
   ansible.builtin.apt:
     name: apt-transport-https
     state: present
 
-- name: Ensure /etc/apt/keyrings exists.
+- name: Ensure /etc/apt/keyrings exists
   ansible.builtin.file:
     path: /etc/apt/keyrings
     state: directory
     mode: '0755'
 
-- name: Import Microsoft's signing key.
+- name: Import Microsoft's signing key
   ansible.builtin.get_url:
     url: https://packages.microsoft.com/keys/microsoft.asc
     dest: /etc/apt/keyrings/packages.microsoft.asc
 
-- name: Add VS Code repository.
+- name: Add VS Code repository
   ansible.builtin.apt_repository:
     repo: deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.asc] https://packages.microsoft.com/repos/code stable main
     filename: vscode
     state: present
 
-- name: Install VS Code.
+- name: Install VS Code
   ansible.builtin.apt:
     name: "{{ vscode_package }}"
     state: present

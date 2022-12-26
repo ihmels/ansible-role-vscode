@@ -4,13 +4,13 @@
   become: true
 
   pre_tasks:
-    - name: Update apt cache.
+    - name: Update apt cache
       ansible.builtin.apt:
         update_cache: yes
         cache_valid_time: 3600
       when: ansible_os_family == 'Debian'
 
-    - name: Install GnuPG.
+    - name: Install GnuPG
       ansible.builtin.apt:
         name: [gnupg, gnupg-agent]
         state: present
