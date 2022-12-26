@@ -1,11 +1,11 @@
 ---
-- name: Import Microsoft's signing key.
+- name: Import Microsoft's signing key
   ansible.builtin.rpm_key:
     key: https://packages.microsoft.com/keys/microsoft.asc
     fingerprint: BC52 8686 B50D 79E3 39D3 721C EB3E 94AD BE12 29CF
     state: present
 
-- name: Add VS Code repository.
+- name: Add VS Code repository
   ansible.builtin.yum_repository:
     name: code
     file: vscode
@@ -15,7 +15,7 @@
     gpgkey: https://packages.microsoft.com/keys/microsoft.asc
     state: present
 
-- name: Install VS Code.
+- name: Install VS Code
   ansible.builtin.dnf:
     name: "{{ vscode_package }}"
     state: present
