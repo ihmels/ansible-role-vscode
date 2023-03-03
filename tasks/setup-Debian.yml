@@ -19,6 +19,7 @@
   ansible.builtin.get_url:
     url: https://packages.microsoft.com/keys/microsoft.asc
     dest: /etc/apt/keyrings/packages.microsoft.asc
+    mode: '0644'
 
 - name: Add VS Code repository
   ansible.builtin.apt_repository:
