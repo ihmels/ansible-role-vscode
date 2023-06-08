@@ -1,5 +1,5 @@
-Ansible Role: VSCode
-=========
+Ansible Role: VS Code
+=====================
 
 An Ansible Role that installs [Microsoft Visual Studio Code][1].
 
